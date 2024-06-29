@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.hrcard{
+  display: none;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -34,5 +37,77 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes waveOpacity {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.avatar-icon {
+  animation: waveOpacity 2s infinite ease-in-out;
+  color: #b5bac0;
+}
+
+
+.loading{
+  animation: waveOpacity 2s infinite ease-in-out;
+}
+
+@media (max-width: 767px){
+  .cardimg{
+    height: 17rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .cardimg-1 {
+    height: 11rem;
+    padding: 1rem;
+  }
+
+  .contentainer {
+    flex-direction: column;
+  }
+  .contentainer-img {
+    order: 1;
+  }
+  .contentainer-content {
+    order: 2;
+  }
+  .hrcard{
+    display: block;
+  }
+}
+
+@media (max-width: 350px) {
+  
+  .cardimg{
+    height: 11rem;
+     
+   }
+
+   .cardimg-1{
+    height: 9rem;
+    padding: 1rem;
+   }
+
+
+   .contentainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .contentainer-img {
+    flex: 1;
+    order: 1;
+  }
+  .contentainer-content {
+    order: 2;
+    
   }
 }
