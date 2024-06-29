@@ -140,8 +140,8 @@ function App() {
 
             <div className='contentainer-cantent'>
               <p><strong>Username:</strong> {selectedUser.profile.username}</p>
-              <p><strong>First Name:</strong> {selectedUser.profile.firstName}</p>
-              <p><strong>Last Name:</strong> {selectedUser.profile.lastName}</p>
+              <p><strong>First Name:</strong> {selectedUser.profile.firstName} {selectedUser.profile.lastName}</p>
+              // <p><strong>Last Name:</strong> {selectedUser.profile.lastName}</p>
               <p><strong>Bio:</strong> {selectedUser.Bio}</p>
               <p><strong>Job Title:</strong> {selectedUser.jobTitle}</p>
               <p><strong>Email:</strong> {selectedUser.profile.email}</p>
